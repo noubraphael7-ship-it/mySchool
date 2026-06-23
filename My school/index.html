@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My school</title>
+  <link rel="icon" href="school logo.jpeg" type="image/jpeg">
+  <style>
+    .title {
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      color: darkblue;
+    }
+    body {
+      background-color: pink;
+      font-family: 'Courier New', Courier, monospace;
+      color: gray;
+    }
+    p {
+      font-weight: bold;
+      font-family: Tahoma, sans-serif;
+      color: black;
+    }
+    sup {
+      color: darkgreen;
+    }
+    sub {
+      color: darkgreen;
+    }
+    .u {
+      padding: 7px;
+      color: orange;
+      float: right;
+      border-radius: 50%;
+      border: 3px dashed yellow;
+    }
+    button {
+      float: right;
+      width: 210px;
+      height: 70px;
+      background-color: lightblue;
+      font-family: fantasy;
+      border-color: turquoise;
+      border-radius: 20px;
+      color: darkred;
+      cursor: pointer;
+    }
+    .st {
+      width: 80px;
+      float: none;
+      height: 50px;
+      background-color: lightgreen;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="title"><u>My School</u></h1>
+  </header>
+  <main>
+    <div>
+      <h2>Name:-</h2>
+      <p>Al-Shaheed Ahmed Galal Governomental Language School</p>
+      <section>
+        <h2>Location:-</h2>
+        <button id="School" onclick="window.open('https://maps.google.com/?cid=11168451714122715424', '_blank')"><b>GPS</b></button>
+        <p>55GW+GPF, Al Hamraa Ath Thaneyah, El Fateh, Assiut Governorate 2090033</p>
+      </section>
+    </div>
+    <div>
+      <h2>Stages</h2>
+      <ol>
+        <li id="A">
+          <button onclick="a()" class="st">KG</button>
+        </li>
+        <li id="B">
+          <button onclick="b()" class="st">Primary</button>
+        </li>
+        <li id="C">
+          <button onclick="c()" class="st">Preparatory</button>
+        </li>
+        <li id="D">
+          <button onclick="d()" class="st">Secondary</button>
+        </li>
+      </ol>
+    </div>
+  </main>
+  <footer>
+    <span class = "u"> <h3>
+      <b>
+        <sup>
+          BYE
+        </sup>
+        VISIT US
+        <sub>
+          BYE
+        </sub>
+      </b>
+    </h3> </span>
+  </footer>
+  <script>
+    function a() {
+                let no="";
+                no = document.getElementById("A");
+                no.innerText = "Subjects: Arabic, English and Maths";
+                no.innerHTML = '<span style="color: red; font-weight: bold;">Subjects:</span> <span style="color: blue;"> <ul> <li>Arabic</li> <li> English </li> <li> Maths</li> </ul></span>';
+            }
+    function b() {
+                let no="";
+                no = document.getElementById("B")
+                no.innerHTML = '<span style="color: red; font-weight: bold;">Subjects:</span> <span style="color: black;"> <ul> <li>Arabic</li> <li> English</li> <li> Social studies</li> <li> Science</li> <li>ICT </li> <li> Maths</li></ul></span>'
+            }
+    function c() {
+                let no=""
+                no = document.getElementById("C")
+                no.innerHTML = '<span style="color: red; font-weight: bold;">Subjects:</span> <span style="color: blue;"> <ul> <li>Arabic </li> <li>English</li> <li> Social studies </li> <li>Science</li> <li> French </li> <li>Information and Communication Technology </li> <li> Maths</li></ul></span>'
+            }
+    function d() {
+                let no=""
+                no = document.getElementById("D")
+                no.innerHTML = '<span style="color: red; font-weight: bold;"> <b><strong>Subjects:</b> </strong></span> <span style="color: black;"> <ul> <li>Arabic</li> <li>English</li><li> History </li><li>Philosophy and Logic </li><li>French </li><li>Bio</li> <li>Integrated Science</li><li> Physics </li><li> Chemistry </li><li> Programming and AI </li><li> German </li><li>  Maths</li>  </ul></span>'
+            }
+  </script>
+</body>
+</html>
